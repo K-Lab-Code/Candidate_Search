@@ -4,7 +4,6 @@
   font-family: 'Inter Tight', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   font-synthesis: none;
@@ -42,6 +41,14 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
+
+.minus{
+  background-color: red;
+ }
+ 
+ .plus{
+   background-color: green;
+ }
 
 button {
   border-radius: 8px;
@@ -98,6 +105,7 @@ tbody tr:nth-child(odd) {
   display: flex;
   justify-content: flex-start;
   padding: 1em 2em;
+  max-width: 100%;
 }
 
 .nav-item {
@@ -118,3 +126,28 @@ tbody tr:nth-child(odd) {
   width: 80vw;
   table-layout: fixed;
 }
+.table img {
+  display: block;
+  margin: auto;
+}
+
+.table button {
+  display: block;
+  margin: auto;
+}
+
+.table {
+  width: 90%;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center; /* Center the text horizontally */
+  vertical-align: middle; /* Center the text vertically */
+  word-wrap: break-word; /* Wrap text to the next line if it overflows */
+}
+
+
+

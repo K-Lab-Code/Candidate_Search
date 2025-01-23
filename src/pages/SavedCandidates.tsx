@@ -2,10 +2,10 @@ import { useState } from 'react';
 import Candidate from '../interfaces/Candidate.interface.tsx';
 
 const SavedCandidates = () => {
-  const [candidateList, changeCandidateList] = useState(JSON.parse(localStorage.getItem('candidateList') || '[]'));
+  const [candidateList, changeCandidateList] = useState<Candidate[]>(JSON.parse(localStorage.getItem('candidateList') || '[]'));
 
   function deleteCandidate(login: string) {
-    const newList = candidateList.filter((candidate: Candidate) => candidate.login !== login);
+    const newList: Candidate[] = candidateList.filter((candidate: Candidate) => candidate.login !== login);
     localStorage.setItem('candidateList', JSON.stringify(newList));
     changeCandidateList(newList);
     console.log('Candidate deleted:');
@@ -33,7 +33,7 @@ const SavedCandidates = () => {
                 <td>{candidate.email || 'N/A'}</td>
                 <td>{candidate.company || 'N/A'}</td>
                 <td>{candidate.bio || 'N/A'}</td>
-                <td><button onClick={() => { deleteCandidate(candidate.login) }}>-</button></td>
+                <td><button className='minus' onClick={() => { deleteCandidate(candidate.login) }}>-</button></td>
               </tr>
             );
           })}
