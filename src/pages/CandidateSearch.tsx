@@ -20,13 +20,13 @@ const CandidateSearch = () => {
       }
     }
   }, []);
-  function accept() {
+  function accept():void {
     const candidateList = JSON.parse((localStorage.getItem('candidateList') ?? '[]'));
     candidateList.push(profile);
     localStorage.setItem('candidateList', JSON.stringify(candidateList));
     nextProfile();
   }
-  function nextProfile() {
+  function nextProfile():void {
     const profileList = JSON.parse((localStorage.getItem('profileList') ?? '[]'));
     profileList.shift()
     if (profileList.length !== 0) {
@@ -50,8 +50,8 @@ const CandidateSearch = () => {
           <p>Bio: {profile.bio || 'N/A'}</p>
         </div>
         <div>
-          <button onClick={nextProfile}>-</button>
-          <button onClick={accept}>+</button>
+          <button className='minus' onClick={nextProfile}>-</button>
+          <button className='plus' onClick={accept}>+</button>
         </div >
       </>
     )
@@ -60,7 +60,6 @@ const CandidateSearch = () => {
       return (<p>No More Candidates are available</p>);
     }
     else {
-      console.log("here hre");
       nextProfile();
     }
   }
@@ -69,4 +68,3 @@ const CandidateSearch = () => {
 
 export default CandidateSearch;
 
-//style='background-color:red;border-radius:50%;'

@@ -13,7 +13,7 @@ This project is a Candidate Search Application that leverages the GitHub API to 
 
 ## Installation
 
-- Use this link [https://my-weather-app-uieh.onrender.com/](https://my-weather-app-uieh.onrender.com/) to get to deployed sit or if you want to use it on your own machine use following steps below.
+- Use this link [https://candidate-search-earj.onrender.com](https://candidate-search-earj.onrender.com) to get to deployed sit or if you want to use it on your own machine use following steps below.
 - copy either all the files from the repository to your computer or use your git bash terminal to clone the repository down to your own machine. 
 - make sure you have [node js](https://nodejs.org/en) and the package manager that comes with it.
 - run the following command in project folder terminal: "npm i" (don't include the quotation marks). This will download all the needed dependencies for the project
@@ -28,14 +28,24 @@ This project is a Candidate Search Application that leverages the GitHub API to 
 - underneath all this info of the profile there is a minus and plus button.
 - If you click the minus button the account will be skipped an a new account will appear.
 - If you click the plus button you will also move on to the next account but the profile will be saved for the Potential Candidates page.
+
+![Image of Candidate Search Page](./screenshots/Screenshot-Candidate-Search.png)
+
 - On the Potential Candidate page a table of all the saved profiles will appear which each row representing a candidate.
 - There table has the a column for each data field for profile plus an additional one with a minus button.
 - Clicking on this button will reject the application and remove it from the table.
+
+![Image of Candidate Search Page](./screenshots/Screenshot-Potential-Candidates.png)
+
 - If there is no candiates left on the Home page a message that there are no more will be displayed
 - If there is no candiates saved on the Potential Candidates page then a message saying none have been saved yet will be displayed on that page.
 - If there is no candiates saved and no candiates left on home page then the website will fetch more profiles with API and start showing them.
-- For a walkthrough of how to use the application [Click Here](https://drive.google.com/file/d/1ZHoSkD0CW5YdDofwclK1MyJvoU3Pe7Bc/view).
+- For a walkthrough of how to use the application [Click Here](https://drive.google.com/file/d/1vGGjVFsZkQqwdRA3scSppThX_5ybFP99/view).
 
 ## Credits
 
 Project Designer: Kalab Smith
+
+## License
+
+Distributed under the MIT License. See LICENSE.txt for more information.
