@@ -13,7 +13,7 @@ This project is a Candidate Search Application that leverages the GitHub API to 
 
 ## Installation
 
-- Use this link [https://candidate-search-earj.onrender.com](https://candidate-search-earj.onrender.com) to get to deployed sit or if you want to use it on your own machine use following steps below.
+- Use this link [https://candidate-search-earj.onrender.com](https://candidate-search-earj.onrender.com) to get to deployed sit or if you want to use it on your own machine use following steps below (WARNING the token for this site will adventually expire when it does this website will stop working).
 - copy either all the files from the repository to your computer or use your git bash terminal to clone the repository down to your own machine. 
 - make sure you have [node js](https://nodejs.org/en) and the package manager that comes with it.
 - run the following command in project folder terminal: "npm i" (don't include the quotation marks). This will download all the needed dependencies for the project
